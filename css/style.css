@@ -4,6 +4,11 @@
 }
 .navbar{
     display: flex;
+    cursor: pointer;
+    position: sticky;
+    top: 0;
+    justify-content: center;
+    align-items: center;
 }
 .logo{
     width: 20%;
@@ -22,7 +27,7 @@
     display: flex;
     align-items: center;
 width: 50%;
-background-color: black;
+/* background-color: black; */
 }
 .nav-list li{
 list-style: none;
@@ -36,10 +41,81 @@ color: white;
     color: aqua;
 }
 .rightNav{
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     width: 50%;
     text-align: right;
+    padding-top: 18px;
+    padding-right: 20px;
+}
+#search{
+    padding: 5px 10px;
+    font-size: 17px;
+    border: 2px solid gray;
+    border-radius: 15px;
 }
 .rightNav input.search{
-    text-align: center;
+    text-align: left;
+    
+}
+.background{
+    background: rgba(0, 0, 0, .7) url(../img/bg.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.firstSection{
+    height: 100dvh;
+}
+.firstHalf{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+}
+.text-big{
+    font-size: 2.5rem;
+}
+.text-small{
+    font-size: 1rem;
+}
+.btn{
+    padding: 6px 20px;
+    margin: 8px 2px;
+    border: 2px solid white;
+    border-radius: 8px;
+    cursor: pointer;
+    background: none;
+    color: white;
+}
+.btn-sm{
+    padding: 5px 10px;
+    vertical-align: middle;
+}
+.btn :hover{
+    color: aqua;
+}
+.secondHalf{
+    width: 30%;
+}
+.secondHalf img{
+    width: 5rem;
+    height: 5rem;
+    border: 2px solid white;
+    border-radius: 250px;
+}
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: serif;
+    max-width: 50%;
+    margin: auto;
+    height: 80%;
+}
+.secRight{
+    height: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    align-items: center;
+    max-width: 80%;
 }
