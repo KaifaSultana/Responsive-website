@@ -27,7 +27,7 @@
 .nav-list{
     display: flex;
     align-items: center;
-width: 50%;
+width: 70%;
 /* background-color: black; */
 }
 .nav-list li{
@@ -43,10 +43,23 @@ color: white;
 }
 .rightNav{
     /* background-color: blueviolet; */
-    width: 50%;
+    width: 30%;
     text-align: right;
     padding-top: 18px;
     padding-right: 20px;
+}
+.burger{
+    display: none;
+position: absolute;
+right: 15px;
+top: 10%;
+cursor: pointer;
+}
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 3px;
 }
 #search{
     padding: 5px 10px;
@@ -94,6 +107,9 @@ color: white;
     color: black;
     border-color: black;
 }
+.btn-dark :hover{
+    color: aqua;
+}
 .btn :hover{
     color: aqua;
 }
@@ -118,12 +134,12 @@ color: white;
 }
 .section{
     font-family: 'Ubuntu', sans-serif;
-    height: 500px;
     display: flex;
     justify-content: space-evenly;
     margin: auto;
     align-items: center;
     max-width: 80%;
+    padding-top: 10px;
 }
 .section-Left{
    
@@ -138,19 +154,20 @@ color: white;
     font-size: xx-large;
 }
 .para{
-    padding:0px 36px;
+    padding:5px 36px;
 }
 .contact{
     background-color: rgba(247, 243, 243, 0.844);
-    height: 50vh;
+    height: 85vh;
 }
 .text-center{
-    padding: 30px;
+    padding: 25px;
     text-align: center;
 }
 .form{
-    max-width: 500px;
-    margin:10px auto;
+    max-width: 62%;
+    margin:5px auto;
+    border-color: gray;
 }
 .form input{
     width: 100%;
@@ -159,4 +176,45 @@ color: white;
     border: 2px solid gray;
     border-radius: 6px;
     margin: 12px 0px;
+}
+.text-footer{
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+@media only screen and (max-width: 1117px){
+ .nav-list{
+    flex-direction: column;
+ }   
+ .navbar{
+    height: 450px;
+    flex-direction: column;
+    transition: all 0.5s ease-out;
+ }
+ .rightNav{
+    text-align: center;
+ }
+ #search{
+    width: 100%;
+ }
+ .burger{
+    display: block;
+ }
+ .box-main{
+    flex-direction: column-reverse;
+    width: 100%;
+    max-width: 70%;
+ }
+ .h-nav{
+    height: 72px;
+ }
+ .v-class{
+    opacity: 0;
+ }
+ .firstHalf{
+    text-align: center;
+ }
+ .section{
+    flex-direction: column-reverse;
+ }
 }
